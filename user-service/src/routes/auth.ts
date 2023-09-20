@@ -8,7 +8,8 @@ class HomeRoutes {
   constructor() {
     this.router.post("/register", this.controller.register);
     this.router.post("/login", this.controller.register);
-    this.router.post("/check-token", this.controller.register);
+    this.router.post("/login", this.controller.register);
+    ;
   }
 
 
