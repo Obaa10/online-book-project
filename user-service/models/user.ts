@@ -3,7 +3,7 @@ import emailValidator from "email-validator";
 import crypto from "crypto";
 import jwt from "jsonwebtoken";
 
-interface IUser {
+export interface IUser {
   name: string;
   email: string;
   password: string;
@@ -52,3 +52,4 @@ userSchema.method(
 );
 
 let User = model<IUser>("User", userSchema);
+exports.User = User;
