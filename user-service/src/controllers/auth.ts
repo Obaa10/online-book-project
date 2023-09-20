@@ -5,12 +5,15 @@ import emailValidator from "email-validator";
 import { User, IUser } from "../models/user";
 import TokenData from "../interfaces/token_data";
 import DataStoredInToken from "../interfaces/data_stored_in_token";
+import dotenv from 'dotenv';
 
 
 
 export default class Auth {
 
     async register(req: Request, res: Response) {
+        console.log(req.body);
+        
         var { email, password, name, avatar } = req.body;
 
         if (!email || !password) {
@@ -57,7 +60,7 @@ export default class Auth {
         }
 
         const signedData = JSON.stringify(user);
-        const token = jwt.sign(signedData, process.env.USER_JWT_KEY);
+        const token = jwt.sign(signedData, "ssss");
         return { ...user, password: undefined, token };
     }
 
@@ -70,7 +73,7 @@ export default class Auth {
             throw new Error("missing password or email..");
         }
 
-        let user: any = jwt.verify(token, process.env.USER_JWT_KEY);
+        let user: any = jwt.verify(token, "ssss");
         if (user) {
             user = await User.findById(user._id);
             if (user) {
@@ -92,7 +95,7 @@ export default class Auth {
 
     public createToken(user: IUser): TokenData {
         const expiresIn = 60 * 60; // an hour
-        const secret = process.env.JWT_SECRET;
+        const secret = "ssss";
         const dataStoredInToken: DataStoredInToken = {
             _id: user.id,
         };
