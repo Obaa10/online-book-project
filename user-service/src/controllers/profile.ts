@@ -12,7 +12,7 @@ export default class Auth {
         var { name, avatar } = req.body;
 
         let user = await User.updateOne({
-            id: req.user.id
+            id: req.user?.id
         }, {
             name: name,
             avatar: avatar,
