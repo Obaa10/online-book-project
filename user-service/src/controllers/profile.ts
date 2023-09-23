@@ -18,6 +18,6 @@ export default class Auth {
             avatar: avatar,
         });
 
-        return { ...user };
+        return { user };
     }
 }

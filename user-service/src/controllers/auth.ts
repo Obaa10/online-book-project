@@ -5,8 +5,6 @@ import emailValidator from "email-validator";
 import { User, IUser } from "../models/user";
 
 
-
-
 export default class Auth {
 
 
