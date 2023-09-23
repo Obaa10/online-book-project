@@ -1,8 +1,18 @@
 {
   "name": "order-service",
   "packageManager": "yarn@3.6.3",
+  "scripts": {
+    "start": "node src/index.js"
+  },
   "dependencies": {
+    "axios": "^1.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.0.1",
+    "helmet": "^7.0.0",
     "pg": "^8.11.3",
-    "pg-hstore": "^2.3.4"
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.33.0",
+    "stripe": "^13.7.0"
   }
 }
