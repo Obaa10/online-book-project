@@ -1,19 +1,10 @@
-const User = require('./user');
+const express = require('express');
+const router = express.Router();
+const Controller = require('./../controllers/index');
+const {checkToken} = require('../lib/middleware/index');
 
-// Create a new user
-User.create({ name: 'John Doe', email: 'john@example.com' })
-  .then(user => {
-    console.log('User created:', user.toJSON());
-  })
-  .catch(error => {
-    console.error('Error creating user:', error);
-  });
 
-// Retrieve all users
-User.findAll()
-  .then(users => {
-    console.log('All users:', users.map(user => user.toJSON()));
-  })
-  .catch(error => {
-    console.error('Error retrieving users:', error);
-  });
+router.post('/payments',checkToken, Controller.createPayment);
+router.get('/payments',checkToken, Controller.getPaymentsByUserId);
+
+module.exports = router;
