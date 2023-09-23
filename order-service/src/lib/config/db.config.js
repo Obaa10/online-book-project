@@ -5,6 +5,5 @@ module.exports = {
       database: 'your_database',
       host: 'localhost',
       dialect: 'postgres'
-    },
-    // production: {},
+    }
   };
