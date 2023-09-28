@@ -92,6 +92,4 @@ git clone [<repository_url>](https://github.com/Obaa10/online-book-project)
 
 Contributions are welcome! If you have any ideas or suggestions, please feel free to open an issue or pull request.
 
-## Contact
-For any inquiries or questions, please contact me via [email@example.com].
    
