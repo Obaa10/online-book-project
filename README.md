@@ -28,7 +28,7 @@ To get started with the Online Book Project, follow the steps below:
 
 1. Clone the repository:
 ```
-git clone [<repository_url>](https://github.com/Obaa10/online-book-project)
+git clone https://github.com/Obaa10/online-book-project
 ```
 2. Install the necessary dependencies for each service:
 - For Book Service:
