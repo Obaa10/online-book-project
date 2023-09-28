@@ -13,7 +13,6 @@ class Book extends Model
         'author',
         'relies_date',
         'pages',
-        'pages',
         'price',
       ];
 }
