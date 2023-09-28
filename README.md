@@ -1,6 +1,10 @@
 # Online Book Project
 
-The Online Book Project is a sample project consisting of three services: Book Service, User Service, and Order Service. Each service is developed using different frameworks and languages, showcasing the versatility of microservices architecture.
+The Online Book Project is a sample microservices project consisting of three services: Book Service, User Service, and Order Service. Each service is developed using different frameworks and languages, showcasing the versatility of microservices architecture.
+
+## Purpose
+
+The main objective of this project is to demonstrate the implementation of microservices architecture and explore the usage of various frameworks and languages for each service. By employing separate services, the project emphasizes the independent development, deployment, and scalability of individual components.
 
 ## Services
 
@@ -17,9 +21,6 @@ The Online Book Project is a sample project consisting of three services: Book S
 - Built with Node.js and Express framework
 - Utilizes MongoDB for data storage
 
-## Purpose
-
-The main objective of this project is to demonstrate the implementation of microservices architecture and explore the usage of various frameworks and languages for each service. By employing separate services, the project emphasizes the independent development, deployment, and scalability of individual components.
 
 ## Getting Started
 
@@ -27,7 +28,7 @@ To get started with the Online Book Project, follow the steps below:
 
 1. Clone the repository:
 ```
-git clone <repository_url>
+git clone [<repository_url>](https://github.com/Obaa10/online-book-project)
 ```
 2. Install the necessary dependencies for each service:
 - For Book Service:
